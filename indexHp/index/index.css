@@ -196,7 +196,7 @@ header {
 .illust{
     color: black;
     border-radius: 5%;
-    background-image: url("../hig/intro-illust-img.gif") ;
+    background-image: url("./indexImage/intro-illust-img.gif") ;
     background-size: 100%;
     text-decoration: none;
 }
@@ -204,7 +204,7 @@ header {
 .my-chara{
     color: black;
     border-radius: 5%;
-    background-image: url("../hig/my-chara-img.png") ;
+    background-image: url("./indexImage/my-chara-img.png") ;
     background-size: 100%;
     text-decoration: none;
 }
@@ -212,7 +212,7 @@ header {
 .illust:hover {
     color: black;
     border-radius: 5%;
-    background-image: url("../hig/intro-illust-img.gif") ;
+    background-image: url("./indexImage/intro-illust-img.gif") ;
     background-size: 100%;
     text-decoration: none;
     opacity: 0.5;
@@ -222,7 +222,7 @@ header {
 .my-chara:hover {
     color: black;
     border-radius: 5%;
-    background-image: url("../hig/my-chara-img.png") ;
+    background-image: url("./indexImage/my-chara-img.png") ;
     background-size: 100%;
     text-decoration: none;
     opacity: 0.5;
