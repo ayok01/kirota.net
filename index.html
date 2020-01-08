@@ -8,9 +8,12 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <meta name="description" content="白月きろたのホームページです！" />
     <meta name="twitter:card" content="summary" />
-    <link rel="shortcut icon" type="image/png" href="./indexImage/profile-icon.png">
-    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="shortcut icon" type="image/png" href="./image/profile-icon.png">
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/jquery.bgswitcher.js"></script>
+    <link rel="stylesheet" type="text/css" href="header.css">
+    <link rel="stylesheet" type="text/css" href="index.css">
 
 </head>
 
@@ -21,7 +24,6 @@
             $('.loading').delay(1500).fadeOut(300);
         });
 
-        // 10秒待っても読み込みが終わらない時は強制的にローディング画面をフェードアウト
         function stopload() {
             $('.loading').delay(1000).fadeOut(700);
         }
@@ -35,83 +37,101 @@
     </div>
 </body>
 
-<body background="./indexImage/index-back2.png">
+<script>
+    jQuery(function ($) {
+        $('.bg-slider').bgSwitcher({
+            images: ['./image/index-back/index-back1.png', './image/index-back/index-back3.png', './image/index-back/index-back4.png', './image/index-back/index-back2.png',],
+            interval: 5000,
+            loop: true,
+            shuffle: true,
+            effect: "fade", // fade,blind,clip,slide,drop,hide
+            duration: 1000,
+            easing: "swing" // linear,swing
+        });
+    });
+</script>
+
+<body>
     <div class="wrapper">
-        <header>
-            <div class="header-logo">
+        <div class="bg-slider">
 
-                <a href="index.html">
-                    <img src="./image/iconf.png" alt="header-icon" class="header-img">
-                </a>
+            <header>
+                <div class="header-logo">
+                    <div class="header-list">
+                        <ul>
+                            <li>
+                                <a href="index.html">
+                                    <img src="./image/iconf.png" alt="header-icon" class="header-img">
+                                </a>
+                            </li>
+                            <li>
+                                <div class="menu-list">
+                                    <a href="./illust/illuset.html">
+                                        イラスト
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu-list">
+                                    ブログ
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu-list">
+                                    メモ
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu-list">
+                                    <a href="./profile/profile.html">
+                                        プロフィール
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </header>
 
+
+            <div class="main1-prf">
+                <div class="cher-name">白月きろた</div>
+                <div class="come">絵を描いたり、ゲームしたりしてます。</div>
+
+
+                <div class="sns-list">
+                    <div class="sns-h">SNS</div>
+                    <ul>
+                        <li><a href="https://twitter.com/shirotuki_ki" target="_blank">
+                                <img src="./image/social-icon/twitter-icon.png" alt="twitter-icon"
+                                    class="social-img"></a>
+                        </li>
+                        <li><a href="https://www.pixiv.net/member.php?id=26696698" target="_blank">
+                                <img src="./image/social-icon/pixiv-icon.png" alt="pixiv-icon" class="social-img"></a>
+                        </li>
+                        <li><a href="https://misskey.io/@shirotuki_ki" target="_blank">
+                                <img src="./image/social-icon/misskey-icon.png" alt="misskey-icon"
+                                    class="social-img"></a>
+                        </li>
+                        <li><a href="https://www.instagram.com/shirotuki_ki/" target="_blank">
+                                <img src="./image/social-icon/glyph-logo_May2016.png" alt="misskey-icon"
+                                    class="social-img"></a></li>
+                    </ul>
+                </div>
             </div>
 
 
-
-        </header>
-        <div class="scrool">
-            <div class="sclool-h"></div>
-        </div>
-
-
-
-        <div class="main1-prf">
-            <img src="./indexImage/profile-icon.png" alt="profile-icon" class="prf-icon">
-            <div class="cher-name">白月きろた</div>
-            <div class="come">I want a room to paint a picture in.</div>
-
-            <div class="sns-list">
-                <div class="sns-h">SNS</div>
-                <ul>
-                    <li><a href="https://twitter.com/shirotuki_ki" target="_blank"><img
-                                src="./image/social-icon/twitter-icon.png" alt="twitter-icon" class="social-img"></a>
-                    </li>
-                    <li><a href="https://www.pixiv.net/member.php?id=26696698" target="_blank"><img
-                                src="./image/social-icon/pixiv-icon.png" alt="pixiv-icon" class="social-img"></a></li>
-                    <li><a href="https://misskey.io/@shirotuki_ki" target="_blank"><img
-                                src="./image/social-icon/misskey-icon.png" alt="misskey-icon" class="social-img"></a>
-                    </li>
-                    <li><a href="https://www.instagram.com/shirotuki_ki/?hl=ja" target="_blank"><img
-                                src="./image/social-icon/glyph-logo_May2016.png" alt="misskey-icon"
-                                class="social-img"></a></li>
-                </ul>
+            <div class="footer-back">
+                <div class="footer">
+                    <div nav="footer-c">©shirotuki-ki</div>
+                </div>
             </div>
         </div>
-
-        <div class="intro">
-            <div class="intro-h">紹介</div>
-            <ul>
-                <li class="illust"><a href="coming soon.html" style="text-decoration:none;">イラスト</a></li>
-                <li class="my-chara"><a href="coming soon.html" style="text-decoration:none;">うちの子</a></li>
-            </ul>
-        </div>
-
-        <div class="sns-box">
-            <div class="real-time">ついったー</div>
-            <div class="box"></div>
-            <div class="twitter-h">
-                <a class="twitter-timeline" width="500px" height="700px" data-chrome=”nofooternoscrollbar”
-                    href="https://twitter.com/shirotuki_ki?ref_src=twsrc%5Etfw">Tweets by shirotuki_ki</a>
-                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-            </div>
-
-
-            <div class="null-h">
-                <a href="pixiv.net/"></a>
-            </div>
-        </div>
-
-
-        <div class="footer">
-
-
-            <div nav="footer-c">©shirotuki-ki</div>
-            <div nav="version">verβ0.80.1</div>
-
-        </div>
-
-
     </div>
+
+
 </body>
+
+
 
 </html>

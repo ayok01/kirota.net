@@ -1,0 +1,25 @@
+.profile{
+    margin-top: 5%;
+    text-align: center;
+
+}
+
+.prf-icon{
+    width: auto;
+    height: 100px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.prf-name{
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+
+}
+
+.profile-h {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: rgb(0, 0, 0);
+
+}

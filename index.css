@@ -46,47 +46,18 @@
     text-decoration: none;
 }
 
-body{
-    margin: 0px;
-    background-color: rgba(50, 54, 58, 0.43);
+.bg-slider {
+    width: 100vw;
+    height: 100vh;
+    background-position:center center;
     background-size: cover;
-    background-attachment: fixed;
-    font-family: 'Arial',YuGothic,'Yu Gothic','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3','メイリオ', Meiryo,'ＭＳ ゴシック',sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-
-
-header {
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    background-color: rgba(224, 243, 255, 0.712);
-    padding-top: 0px;
-    padding-left: 0%;
-    padding-bottom: 0px;
-
-}
-
-
-.header-logo{
-    text-align: center;
-}
-.header-img{
-    width: 100px;
-}
-
-.scrool{
-    margin-top: 3%;
-    padding-left: 48%;
-    font-size: 50px;
-    color: aquamarine;
-}
-
-
 
 .main1-prf{
     text-align: center;
-    margin-top: 16%;
 
 }
 
@@ -94,28 +65,23 @@ header {
     margin-left: 0%;
     font-size: 40px;
     padding-bottom: 20px;
-    color: rgb(0, 0, 0);
+    color: rgb(221, 221, 221);
 }
 
 
 
 
-.prf-icon{
-    width: auto;
-    height: 150px;
-    border-radius: 50%;
-    text-align: center;
-}
 
 .cher-name{
-    font-size: 40px;
-    color: rgb(0, 0, 0);
+    font-size: 45px;
+    color: rgb(221, 221, 221);
 
 }
 
 .come {
+    font-size: 25px;
     margin-bottom: 20px;
-    color: rgb(0, 0, 0);
+    color: rgb(221, 221, 221);
 
 
 }
@@ -130,6 +96,7 @@ header {
 
 .sns-h{
     font-size: 20px;
+    color: rgb(221, 221, 221);
 }
 
 .social-img{
@@ -155,160 +122,10 @@ header {
 
 
 
-
-
-.intro{
-    text-align: center;
-    background-color: rgba(224, 243, 255, 0.247);
-}
-
-
-.intro-h{
-    font-size: 30px;
-}
-
-.intro ul{
-    padding-left: 0px;
-    margin-top: 0px;
-}
-
-.intro a{
-    color: black;
-}
-
-.intro a:hover{
-    color: white;
-
-}
-
-.intro ul li{
+.inline-block{
     display: inline-block;
-    padding: 2%;
-    font-size: 30px;
-    transition: all 300ms 0s ease;
-    color: #000;
-    text-decoration: none;
-    margin: 1%;
-
-
+    padding: 20px;
+    vertical-align: top;
 }
-
-.illust{
-    color: black;
-    border-radius: 5%;
-    background-image: url("./indexImage/intro-illust-img.gif") ;
-    background-size: 100%;
-    text-decoration: none;
-}
-
-.my-chara{
-    color: black;
-    border-radius: 5%;
-    background-image: url("./indexImage/my-chara-img.png") ;
-    background-size: 100%;
-    text-decoration: none;
-}
-
-.illust:hover {
-    color: black;
-    border-radius: 5%;
-    background-image: url("./indexImage/intro-illust-img.gif") ;
-    background-size: 100%;
-    text-decoration: none;
-    opacity: 0.5;
-
-}
-
-.my-chara:hover {
-    color: black;
-    border-radius: 5%;
-    background-image: url("./indexImage/my-chara-img.png") ;
-    background-size: 100%;
-    text-decoration: none;
-    opacity: 0.5;
-}
-
-
-
-/*3-1*/
-.sns-box{
-    font-size: 40px;
-    margin-bottom: 30px;
-    background-color: rgba(255, 255, 255, 0.34);
-    padding-bottom: 2l0px;
-}
-
-
-.box {
-    text-align: center;
-}
-
-.real-time{
-    font-size: 40px;
-    text-align: center;
-
-
-}
-
-.twitter-h{
-    text-align: center;
-    padding-left: 0%;
-    padding-top: 10px;
-    font-size: 40px;
-    padding-bottom: 15px;
-    color: rgb(5, 5, 5);
-}
-
-@media(max-width:600px){
-    .sns-box{
-        text-align: center;
-        margin-bottom: 30px;
-        background-color: rgba(255, 255, 255, 0.34);
-        padding-bottom: 20px;
-    }
-
-    .twitter-h{
-        text-align: center;
-        padding-left: 0%;
-        padding-top: 5px;
-        font-size: 30px;
-        padding-bottom: 15px;
-        color: rgb(5, 5, 5);
-    }
-
-}
-
-
-/*-------------------------------------------------サイドウィジットへのtwetter埋め込み修正*/
-
-@media screen and (max-width: 768px) and (min-width: 480px) {
-    iframe .twitter-timeline-rendered{
-        width: 490px !important;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    iframe.twitter-timeline-rendered {
-        width: 450px !important;
-        margin:0 auto;/*これを入れないとめっちゃ細く200pxくらいで表示されます。*/
-    }
-}
-
-.timeline-Widget {
-    max-width: 300px!important;
-    width:200px !important; }
-/*サイドウィジットへのtwetter埋め込み修正終わり*/
-
-
-
-
-
-.footer{
-    background-color: #ffffff;
-    text-align: center;
-
-}
-
-
 
 

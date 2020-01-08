@@ -3,14 +3,16 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>白月きろた|~ギャラリー～</title>
+    <title>白月きろた</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <meta name="description" content="白月きろたのホームページです！" />
     <meta name="twitter:card" content="summary" />
-    <link rel="shortcut icon" type="image/png" href="../profile-icon.png">
-    <link rel="stylesheet" type="text/css" href="illuset.css">
+    <link rel="shortcut icon" type="image/png" href="../image/profile-icon.png">
+    <script type="text/javascript" src="../js/jquery-3.4.1.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../index.css">
+
 </head>
 
 <body>
@@ -20,7 +22,6 @@
             $('.loading').delay(1500).fadeOut(300);
         });
 
-        // 10秒待っても読み込みが終わらない時は強制的にローディング画面をフェードアウト
         function stopload() {
             $('.loading').delay(1000).fadeOut(700);
         }
@@ -30,22 +31,63 @@
 
 
     <div class="loading">
-        <div class="loader">Loading...</div>
+        <div class="animation">Now Loading...</div>
     </div>
 </body>
 
-<body background="index-back2.png">
+<body>
     <div class="wrapper">
-        <header>
-            <div class="header-logo">
+        <div class="bg-slider">
 
-                <a href="../index.html">
-                    <img src="../image/iconf.png" alt="header-icon" class="header-img">
-                </a>
+            <header>
+                <div class="header-logo">
+                    <div class="header-list">
+                        <ul>
+                            <li>
+                                <a href="../index.html">
+                                    <img src="../image/iconf.png" alt="header-icon" class="header-img">
+                                </a>
+                            </li>
+                            <li>
+                                <div class="menu-list">イラスト</div>
+                            </li>
+                            <li>
+                                <div class="menu-list">
+                                    ブログ
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu-list">
+                                    メモ
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu-list">
+                                    <a href="../profile/profile.html">
+                                        プロフィール
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </header>
 
+
+
+
+
+            <div class="footer-back">
+                <div class="footer">
+                    <div nav="footer-c">©shirotuki-ki</div>
+                </div>
             </div>
-        </header>
+        </div>
     </div>
+
+
 </body>
+
+
 
 </html>
