@@ -59,40 +59,43 @@
         <div class="bg-slider">
 
             <header>
-                <div class="header">
+                <div class="header-logo">
                     <div class="header-list">
-
-                        <div class="header-logo">
-                            <a href="index.html">
-                                <img src="./image/iconf.png" alt="header-icon" class="header-img">
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="header-list">
-                        <div class="menu-list">
-
-                            <ul>
-                                <li>
-                                    <a href="./illust/illust">
-                                        illustration
-                                    </a>
-
-                                </li>
-
-                                <li>
+                        <ul>
+                            <li>
+                                <a href="index.html">
+                                    <img src="./image/iconf.png" alt="header-icon" class="header-img">
+                                </a>
+                            </li>
+                            <li>
+                                <div class="menu-list">
                                     <a href="coming-soon.html">
-                                        blog
+                                        イラスト
                                     </a>
-                                </li>
-
-                                <li>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu-list">
                                     <a href="coming-soon.html">
-                                        profile
+                                        =^~^=
                                     </a>
-                                </li>
-                            </ul>
-                        </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu-list">
+                                    <a href="coming-soon.html">
+                                        ブログ
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu-list">
+                                    <a href="coming-soon.html">
+                                        プロフィール
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </header>
@@ -104,19 +107,22 @@
 
 
                 <div class="sns-list">
+                    <div class="sns-h">SNS</div>
                     <ul>
-                        <a href="https://twitter.com/shirotuki_ki" target="_blank">
-                            <img src="./image/social-icon/twitter-icon.png" alt="twitter-icon" class="social-img">
-                        </a>
+                        <li><a href="https://twitter.com/shirotuki_ki" target="_blank">
+                                <img src="./image/social-icon/twitter-icon.png" alt="twitter-icon"
+                                    class="social-img"></a>
+                        </li>
+                        <li><a href="https://www.pixiv.net/member.php?id=26696698" target="_blank">
+                                <img src="./image/social-icon/pixiv-icon.png" alt="pixiv-icon" class="social-img"></a>
+                        </li>
                         <li><a href="https://misskey.io/@shirotuki_ki" target="_blank">
-                                <img src="./image/social-icon/misskey-icon.png" alt="misskey-icon" class="social-img">
-                            </a>
+                                <img src="./image/social-icon/misskey-icon.png" alt="misskey-icon"
+                                    class="social-img"></a>
                         </li>
                         <li><a href="https://www.instagram.com/shirotuki_ki/" target="_blank">
                                 <img src="./image/social-icon/glyph-logo_May2016.png" alt="misskey-icon"
-                                    class="social-img">
-                            </a>
-                        </li>
+                                    class="social-img"></a></li>
                     </ul>
                 </div>
             </div>
@@ -124,7 +130,7 @@
 
             <div class="footer-back">
                 <div class="footer">
-                    <div nav="footer-c">cshirotuki-ki</div>
+                    <div nav="footer-c">©shirotuki-ki</div>
                 </div>
             </div>
         </div>
