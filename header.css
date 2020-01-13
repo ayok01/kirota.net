@@ -1,6 +1,5 @@
 body{
     margin: 0px;
-    background-color: rgba(172, 178, 184, 0.521);
     background-size: cover;
     background-attachment: fixed;
     font-family: 'Arial',YuGothic,'Yu Gothic','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3','メイリオ', Meiryo,'ＭＳ ゴシック',sans-serif;
@@ -31,6 +30,7 @@ header {
 
 .header-list a{
     color: #FFF;
+    text-decoration: none;
 }
 
 .header-list ul{
@@ -42,7 +42,7 @@ header {
 .header-list li{
     vertical-align: top;
     display: inline-block;
-    padding-left: 70px;
+    padding-left: 60px;
 }
 
 
@@ -50,7 +50,7 @@ header {
 
     color: #FFF;
     font-size: 20px;
-    margin-top: 15px;
+    margin-top: 20px;
 }
 
 
