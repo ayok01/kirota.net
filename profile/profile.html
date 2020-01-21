@@ -24,6 +24,26 @@
     <link rel="stylesheet" type="text/css" href="./profile.css">
 </head>
 
+<body>
+    <script type="text/javascript">
+
+        $(window).load(function () {
+            $('.loading').delay(1500).fadeOut(300);
+        });
+
+        function stopload() {
+            $('.loading').delay(1000).fadeOut(700);
+        }
+        setTimeout('stopload()', 0);
+
+    </script>
+
+
+    <div class="loading">
+        <div class="animation">Now Loading...</div>
+    </div>
+</body>
+
 <body background="../image/index-back/index-back5.png">
     <div class="wrapper">
 
