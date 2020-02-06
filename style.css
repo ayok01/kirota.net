@@ -156,10 +156,6 @@ header {
 
 /*^^^^^^^^^^^^^^^^^*/
 /*index.html*/
-@font-face{
-    font-family: 'fonyaji';
-    src: url(../font/HonyaJi-Re.ttf);
-}
 
 .loading {
     position: fixed;
@@ -235,8 +231,7 @@ header {
 
 
 .cher-name{
-    font-family: fonyaji;
-    font-size: 45px;
+    font-size: 35px;
     color: rgb(221, 221, 221);
 
 }
@@ -300,12 +295,19 @@ header {
 
 }
 
+@media screen and (max-width:1200px){
+    .profile{
+    text-align:center;
+    padding-left:0px; 
+    }
+    
+}
+
 .prf-h{
     padding-top: 20px;
     padding-bottom: 10px;
     font-size: 30px;
     font-weight: 500;
-
 }
 
 .under{
@@ -333,6 +335,16 @@ header {
     color: rgb(0, 0, 0);
 }
 
+@media screen and (max-width:888px){
+    .prf-name{
+        text-align:center;
+        margin-left:0px;
+
+    }
+    
+}
+
+
 .profile-h {
     font-size: 20px;
     margin-bottom: 20px;
@@ -351,8 +363,24 @@ header {
     vertical-align: top;
 }
 
+@media screen and (max-width:700px){
+    .profile-list{
+        display:inline;
+    }
+}
+
 .profile-Details{
     width: 650px;
+}
+@media screen and (max-width:920px){
+    .profile-Details{
+        text-align:center;
+        width:auto;
+    }
+    .profile-p{
+        margin-left:0px;
+        margin-right:0px;
+    }
 }
 
 
@@ -465,7 +493,6 @@ header {
 .footer-back-prf{
     background-color: rgba(172, 178, 184, 0.521);
     height: 20px;
-    position: absolute;
     bottom: 0px;
     width: 100%;
 }
@@ -476,4 +503,9 @@ header {
     text-align: center;
 }
 
+@media screen and (min-width:1170px){
+    .footer-back-prf{
+        position: absolute;
+    }
+}
 
