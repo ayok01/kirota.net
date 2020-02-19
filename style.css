@@ -50,6 +50,7 @@ body{
     background-size: cover;
     background-attachment: fixed;
     font-family: 'Arial',YuGothic,'Yu Gothic','Hiragino Kaku Gothic ProN','ãƒ’ãƒ©ã‚®ãƒŽè§’ã‚´ ProN W3','ãƒ¡ã‚¤ãƒªã‚ª', Meiryo,'ï¼­ï¼³ ã‚´ã‚·ãƒƒã‚¯',sans-serif;
+    background-color: rgba(0, 0, 0, 0.952);
 }
 
 header {
@@ -57,7 +58,7 @@ header {
     top: 0px;
     left: 0px;
     width: 100%;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
     padding-top: 0px;
     padding-left: 0%;
     padding-bottom: 0px;
@@ -67,6 +68,11 @@ header {
 .header{
     text-align: right;
     padding-right: 10%;
+    padding-bottom: 5px;
+}
+
+.header-h1{
+    font-size: 35px;
 }
 
 @media screen and (max-width: 767px){
@@ -76,9 +82,6 @@ header {
     }
 }
 
-.header-list{
-    vertical-align: top;
-}
 
 @media screen and (min-width:767px){
     .header-list{
@@ -87,16 +90,18 @@ header {
 }
 
 .header-list a{
-    color: #505050;
+    color: #fff;
     text-decoration: none;
 }
 
 
 
 .header-list ul{
+    font-weight:lighter;
     font-size:25px;
     list-style: none;
     padding: 0px;
+    
     margin: 0px;
 }
 
@@ -109,7 +114,7 @@ header {
 .header-list li{
     vertical-align: top;
     display: inline-block;
-    padding-left: 60px;
+    padding-left: 40px;
 }
 
 @media screen and (max-width: 767px){
@@ -122,7 +127,7 @@ header {
 
 .menu-list {
 
-    color: #FFF;
+    color: #000;
     font-size: 20px;
     margin-top: 20px;
 }
@@ -135,15 +140,14 @@ header {
 
 
 .header-img{
-    width: 100px;
+    padding-top:5px;
+    width: 80px;
 }
 
 
 .footer-back{
-
-    height: 20px;
     position: absolute;
-    bottom: 0px;
+    bottom: 10px;
     width: 100%;
 }
 
@@ -153,10 +157,8 @@ header {
     text-align: center;
 }
 
-
 /*^^^^^^^^^^^^^^^^^*/
 /*index.html*/
-
 .loading {
     position: fixed;
     width: 100vw;
@@ -204,8 +206,9 @@ header {
     text-decoration: none;
 }
 
+
 .bg-slider {
-    width: 100vw;
+    width: auto;
     height: 100vh;
     background-position:center center;
     background-size: cover;
@@ -221,7 +224,7 @@ header {
 
 .main-profile{
     margin-left: 0%;
-    font-size: 40px;
+    font-size: 30px;
     padding-bottom: 20px;
     color: rgb(221, 221, 221);
 }
@@ -231,7 +234,7 @@ header {
 
 
 .cher-name{
-    font-size: 35px;
+    font-size: 45px;
     color: rgb(221, 221, 221);
 
 }
@@ -292,7 +295,6 @@ header {
     padding-left: 30%;
     text-align: left;
     background-color: rgba(217, 219, 221, 0.438);
-
 }
 
 @media screen and (max-width:1200px){
@@ -304,19 +306,22 @@ header {
 }
 
 .prf-h{
+    width: auto;
     padding-top: 20px;
     padding-bottom: 10px;
     font-size: 30px;
     font-weight: 500;
+    color: rgb(255, 255, 255);
+
 }
 
 .under{
-    border-bottom: solid 3px #446386;
+    border-bottom: solid 3px #8db3df;
 }
 
 
 .color{
-    color: #446386;
+    color: #8aafd8;
     font-weight: 600;
     font-size: 35px;
 }
@@ -332,7 +337,7 @@ header {
     font-size: 40px;
     margin-left: 20px;
     font-weight: 500;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
 }
 
 @media screen and (max-width:888px){
@@ -344,11 +349,10 @@ header {
     
 }
 
-
 .profile-h {
     font-size: 20px;
     margin-bottom: 20px;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
 
 }
 
@@ -372,6 +376,7 @@ header {
 .profile-Details{
     width: 650px;
 }
+
 @media screen and (max-width:920px){
     .profile-Details{
         text-align:center;
@@ -381,6 +386,10 @@ header {
         margin-left:0px;
         margin-right:0px;
     }
+}
+
+.profile-Details p{
+    color: rgb(255, 255, 255);
 }
 
 
@@ -443,7 +452,7 @@ header {
     padding-left: 0%;
     font-size: 40px;
     padding-bottom: 15px;
-    color: rgb(5, 5, 5);
+    color: rgb(7, 7, 7);
 }
 
 @media(max-width:600px){
@@ -493,6 +502,7 @@ header {
 .footer-back-prf{
     background-color: rgba(172, 178, 184, 0.521);
     height: 20px;
+    position: absolute;
     bottom: 0px;
     width: 100%;
 }
@@ -502,10 +512,3 @@ header {
     margin: auto;           /* 中央揃え */
     text-align: center;
 }
-
-@media screen and (min-width:1170px){
-    .footer-back-prf{
-        position: absolute;
-    }
-}
-
