@@ -53,6 +53,21 @@ body{
     background-color: rgba(0, 0, 0, 0.952);
 }
 
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    background: rgb(34, 34, 34);
+    border: none;
+    border-radius: 10px;
+    box-shadow: inset 0 0 2px rgb(138, 138, 138); 
+}
+::-webkit-scrollbar-thumb{
+    background: rgb(110, 110, 110);
+    border-radius: 10px;
+    box-shadow: none;
+}
+
 header {
     position: fixed;
     top: 0px;
@@ -72,7 +87,7 @@ header {
 }
 
 .header-h1{
-    font-size: 35px;
+    font-size: 20px;
 }
 
 @media screen and (max-width: 767px){
@@ -98,7 +113,7 @@ header {
 
 .header-list ul{
     font-weight:lighter;
-    font-size:25px;
+    font-size:15px;
     list-style: none;
     padding: 0px;
     
@@ -147,7 +162,7 @@ header {
 
 .footer-back{
     position: absolute;
-    bottom: 10px;
+    bottom: 25px;
     width: 100%;
 }
 
@@ -248,6 +263,8 @@ header {
 }
 .sns-list{
     text-align: center;
+    padding-top:10px;
+    padding-bottom:10px;
 }
 
 .sns-list ul{
@@ -270,7 +287,13 @@ header {
 
 .sns-list ul li{
     display: inline-block;
+    padding-left: 20px;
+}
 
+.sns-list ul li a{
+    font-size: 20px;
+    color: #fff;
+    text-decoration:none;
 }
 
 .sns-list ul li:hover{
@@ -294,7 +317,7 @@ header {
     margin-top: 100px;
     padding-left: 30%;
     text-align: left;
-    background-color: rgba(217, 219, 221, 0.438);
+    /*background-color: rgba(217, 219, 221, 0.438);*/
 }
 
 @media screen and (max-width:1200px){
