@@ -20,7 +20,6 @@ const useStyles = makeStyles((theme) => createStyles({
 
     root: {
         backgroundColor: "#81c784",
-        paddingBottom : "1000px",
         
         
     },
@@ -32,8 +31,20 @@ const useStyles = makeStyles((theme) => createStyles({
         minHeight: "100vh",
         textAlign: "center",
         backgroundPosition : "center",
-        
     },
+    aboutContent:{
+      width: "100%",
+      minHeight: "100vh",
+      textAlign: "center",
+      backgroundPosition : "center",
+    },
+    WorkContet : {
+      backgroundColor : "blue",
+      width: "100%",
+      minHeight: "100vh",
+      textAlign: "center",
+      backgroundPosition : "center",
+    }
 }));
 
 
@@ -45,10 +56,14 @@ const Blog = () => {
         <body style={{ margin: 0 }} className={classes.root}>
             <Header/>
             <div  className = { classes.content}>
-                
             </div>
-            aaaaaa
-            aaaa
+            <div className = {classes.aboutContent}>
+              ssssssss
+            </div>
+            <div className = {classes.WorkContet}>
+              ssssssss
+            </div>
+
         </body>
 
     );
