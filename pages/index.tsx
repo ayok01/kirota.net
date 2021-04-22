@@ -1,6 +1,6 @@
 import Header from "../component/herader"
 import { createStyles, makeStyles } from "@material-ui/core"
-
+import MainContent from "../component/mainContent"
 
 
 const useStyles = makeStyles((theme) => createStyles({
@@ -48,7 +48,7 @@ const useStyles = makeStyles((theme) => createStyles({
 }));
 
 
-const Blog = () => {
+const TopPage = () => {
     const classes = useStyles();
 
 
@@ -58,7 +58,7 @@ const Blog = () => {
             <div  className = { classes.content}>
             </div>
             <div className = {classes.aboutContent}>
-              ssssssss
+              <MainContent/>             
             </div>
             <div className = {classes.WorkContet}>
               ssssssss
@@ -70,4 +70,4 @@ const Blog = () => {
 
 }
 
-export default Blog;
+export default TopPage;
