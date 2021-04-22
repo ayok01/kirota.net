@@ -1,7 +1,9 @@
 import Header from "../component/herader"
 import { createStyles, makeStyles } from "@material-ui/core"
-import MainContent from "../component/mainContent"
-
+import AboutThisSite from "../component/aboutThisSite"
+import AboutProfile from "../component/aboutProfile"
+import Works from "../component/Works"
+import Gallery from "../component/gallery"
 
 const useStyles = makeStyles((theme) => createStyles({
     '@global': {
@@ -38,8 +40,21 @@ const useStyles = makeStyles((theme) => createStyles({
       textAlign: "center",
       backgroundPosition : "center",
     },
-    WorkContet : {
-      backgroundColor : "blue",
+    profile : {
+      backgroundColor : "#FFFFFF",
+      width: "100%",
+      minHeight: "100vh",
+      textAlign: "center",
+      backgroundPosition : "center",
+    },
+    works : {
+      width: "100%",
+      minHeight: "100vh",
+      textAlign: "center",
+      backgroundPosition : "center",
+    },
+    gallery:{
+      backgroundColor : "#FFFFFF",
       width: "100%",
       minHeight: "100vh",
       textAlign: "center",
@@ -58,10 +73,16 @@ const TopPage = () => {
             <div  className = { classes.content}>
             </div>
             <div className = {classes.aboutContent}>
-              <MainContent/>             
+              <AboutThisSite/>             
             </div>
-            <div className = {classes.WorkContet}>
-              ssssssss
+            <div className = {classes.profile}>
+              <AboutProfile/>
+            </div>
+            <div className = {classes.works}>
+              <Works/>
+            </div>
+            <div className = {classes.gallery}>
+              <Gallery/>
             </div>
 
         </body>
