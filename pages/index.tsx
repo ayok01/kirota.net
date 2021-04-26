@@ -2,7 +2,7 @@ import Header from "../component/herader"
 import { createStyles, makeStyles } from "@material-ui/core"
 import AboutThisSite from "../component/aboutThisSite"
 import AboutProfile from "../component/aboutProfile"
-import Works from "../component/Works"
+import Works from "../component/works"
 import Gallery from "../component/gallery"
 
 const useStyles = makeStyles((theme) => createStyles({
