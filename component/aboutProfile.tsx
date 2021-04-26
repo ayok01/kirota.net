@@ -1,5 +1,5 @@
 import { createStyles, makeStyles } from "@material-ui/core";
-
+import Avatar from '@material-ui/core/Avatar';
 
 const useStyles = makeStyles((theme) => createStyles({
     root : {
@@ -10,6 +10,14 @@ const useStyles = makeStyles((theme) => createStyles({
         fontSize : "3.56rem",
         paddingBottom : "5vh",
     },
+    card : { 
+        
+    },
+    large: {
+
+        width: "100px",
+        height: "100px",
+      }
 }));
 
 const AboutProfile = ()  => {
@@ -18,6 +26,8 @@ const AboutProfile = ()  => {
     return(
         <div className = { classes.root}>
             <h1 className = {classes.title}>Profile</h1>
+            <div className = {classes.card}></div>
+            <Avatar alt="Remy Sharp" src="./20210326.png" style={{alignSelf: 'center'}} className={classes.large} />
         </div>
     );
 }

@@ -1,5 +1,6 @@
 import { createStyles, makeStyles } from "@material-ui/core";
 
+
 const useStyles = makeStyles((theme) => createStyles({
     root:{
         paddingTop : "10Vh",
@@ -17,6 +18,7 @@ const Gallery = () => {
     return(
         <div className = {classes.root} >
             <h1 className = {classes.title}>Gallery</h1>
+            
         </div>
     )
 }
