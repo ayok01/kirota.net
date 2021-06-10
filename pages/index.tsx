@@ -22,11 +22,11 @@ const useStyles = makeStyles((theme) => createStyles({
 
     root: {
         //背景が決まったときにファイル指定お願いします。
-        //backgroundImage:'url(/20210311.png)',
-        //backgroundAttachment : 'fixed',
-        //width:"100%",
+        backgroundImage:'url(/58325-m.jpg)',//この背景はtestです
+        backgroundAttachment : 'fixed',
+        width:"100%",
 
-        backgroundColor: "#81c784",
+        backgroundColor: "#81c784",//背景が決まった場合はコメントアウトしてください
         
         
     },
@@ -59,7 +59,7 @@ const useStyles = makeStyles((theme) => createStyles({
       backgroundPosition : "center",
     },
     gallery:{
-      backgroundColor : "#FFFFFF",
+      //backgroundColor : "#FFFFFF",
       width: "100%",
       minHeight: "100vh",
       textAlign: "center",
@@ -85,9 +85,11 @@ const TopPage = () => {
             <div id = "profile" className = {classes.profile}>
               <AboutProfile/>
             </div>
-            <div id = "works" className = {classes.works}>
-              <Works/>
-            </div>
+            {
+            //<div id = "works" className = {classes.works}>
+            //  <Works/>
+            //</div>
+            }
             <div id = "gallery" className = {classes.gallery}>
               <Gallery/>
             </div>

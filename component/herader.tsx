@@ -21,7 +21,8 @@ const useStyles = makeStyles((theme) => ({
   flexGrow: 1,
   },
   navButton :{
-    marginRight:"40px",
+    marginRight:"20px",
+    marginLeft:"20px",
     
   },
   navButtonSns : {
@@ -70,12 +71,15 @@ const DenseAppBar = () => {
             window.location.href = "#gallery";
             }}
             className={classes.navButton} color="inherit">
-            ブログ
+            ポートフォリオ
           </Button>
 
-          <Button className={classes.navButton} color="inherit">連絡先</Button>
-          <Button className={classes.navButtonSns} color="inherit"><TwitterIcon /></Button>
-          <Button className={classes.navButtonSns} color="inherit"><YouTubeIcon /></Button>
+          <Button className={classes.navButton} color="inherit">ブログ
+          </Button>
+          
+          <Button className={classes.navButtonSns} color="inherit">
+          <a href={"https://twitter.com/KiroTuki"}><TwitterIcon /></a>
+          </Button>
 
           <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
             <MenuIcon />
