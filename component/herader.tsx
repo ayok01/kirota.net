@@ -38,16 +38,41 @@ const DenseAppBar = () => {
     
   const classes = useStyles();
 
+  const topLink = () =>{
+    window.scrollTo(0, 0);
+  }
+
+
+
   return (
     <header className = {classes.root}>
             <AppBar  position="relative" color="inherit"  style={{ background: 'transparent', boxShadow: 'none'}} >
         <Toolbar>
           
           <Typography  className={classes.title}></Typography>
-          <Button className={classes.navButton} color="inherit">トップ</Button>
-          <Button className={classes.navButton} color="inherit">このサイトについて</Button>
-          <Button className={classes.navButton} color="inherit">ポートフォリオ</Button>
-          <Button className={classes.navButton} color="inherit">ブログ</Button>
+          <Button id = "top" onClick={topLink} className={classes.navButton} color="inherit">トップ</Button>
+          
+          <Button onClick={() => {
+            window.location.href = "#aboutThisSite";
+            }}
+            className={classes.navButton}
+            color="inherit">このサイトについて
+            </Button>
+          
+          <Button onClick={() => {
+            window.location.href = "#profile";
+            }}
+          className={classes.navButton} color="inherit">
+            プロフィール
+          </Button>
+
+          <Button onClick={() => {
+            window.location.href = "#gallery";
+            }}
+            className={classes.navButton} color="inherit">
+            ブログ
+          </Button>
+
           <Button className={classes.navButton} color="inherit">連絡先</Button>
           <Button className={classes.navButtonSns} color="inherit"><TwitterIcon /></Button>
           <Button className={classes.navButtonSns} color="inherit"><YouTubeIcon /></Button>

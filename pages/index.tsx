@@ -68,25 +68,27 @@ const useStyles = makeStyles((theme) => createStyles({
 }));
 
 
+
+
 const TopPage = () => {
     const classes = useStyles();
 
-
+    
     return (
         <body style={{ margin: 0 }} className={classes.root}>
             <Header/>
             <div  className = { classes.content}>
             </div>
-            <div className = {classes.aboutContent}>
+            <div id = "aboutThisSite" className = {classes.aboutContent}>
               <AboutThisSite/>             
             </div>
-            <div className = {classes.profile}>
+            <div id = "profile" className = {classes.profile}>
               <AboutProfile/>
             </div>
-            <div className = {classes.works}>
+            <div id = "works" className = {classes.works}>
               <Works/>
             </div>
-            <div className = {classes.gallery}>
+            <div id = "gallery" className = {classes.gallery}>
               <Gallery/>
             </div>
 
