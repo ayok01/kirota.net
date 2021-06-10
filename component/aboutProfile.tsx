@@ -23,7 +23,6 @@ const useStyles = makeStyles((theme) => createStyles({
         marginTop: "50px",
         //paddingLeft: "30%",
         textAlign: "center",
-        Color : "rgba(217, 219, 221, 0.438)",
     },
     profileIcon: {
     },
