@@ -25,9 +25,7 @@ const AboutProfile = ()  => {
 
     return(
         <div className = { classes.root}>
-            <h1 className = {classes.title}>Profile</h1>
-            <div className = {classes.card}></div>
-            <Avatar alt="Remy Sharp" src="./20210326.png" style={{alignSelf: 'center'}} className={classes.large} />
+
         </div>
     );
 }

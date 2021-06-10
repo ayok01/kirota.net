@@ -21,6 +21,11 @@ const useStyles = makeStyles((theme) => createStyles({
     
 
     root: {
+        //背景が決まったときにファイル指定お願いします。
+        //backgroundImage:'url(/20210311.png)',
+        //backgroundAttachment : 'fixed',
+        //width:"100%",
+
         backgroundColor: "#81c784",
         
         
