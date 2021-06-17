@@ -4,6 +4,7 @@ import AboutThisSite from "../component/aboutThisSite"
 import AboutProfile from "../component/aboutProfile"
 import Works from "../component/works"
 import Gallery from "../component/gallery"
+import MainPage from "../component/mainPage"
 
 const useStyles = makeStyles((theme) => createStyles({
     '@global': {
@@ -22,7 +23,7 @@ const useStyles = makeStyles((theme) => createStyles({
 
     root: {
         //背景が決まったときにファイル指定お願いします。
-        backgroundImage:'url(/58325-m.jpg)',//この背景はtestです
+        backgroundImage:'url(/backgraund.png)',//この背景はtestです
         backgroundAttachment : 'fixed',
         width:"100%",
 
@@ -78,6 +79,7 @@ const TopPage = () => {
         <body style={{ margin: 0 }} className={classes.root}>
             <Header/>
             <div  className = { classes.content}>
+              <MainPage/>
             </div>
             <div id = "aboutThisSite" className = {classes.aboutContent}>
               <AboutThisSite/>             
