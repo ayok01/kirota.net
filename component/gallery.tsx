@@ -50,7 +50,7 @@ const Gallery = () => {
                 </li>)}
             </ul>
 
-            <a >もっと見る</a>
+            <a >more</a>
 
             
         </div>

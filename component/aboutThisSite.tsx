@@ -21,8 +21,8 @@ const MainContent = () => {
     return(
         <div className = {classes.root}>
             <h1 className = {classes.title}>About this site</h1>
-            <p className = {classes.text}>ここはきろたの制作したものを適当においてるサイトです。</p>
-            <p className = {classes.text}>作ったBotや描いたイラストなどを適当においていきます。</p>
+            <p className = {classes.text}>ここは白月きろたの制作したものを適当においてるサイトです。</p>
+            <p className = {classes.text}>作ったを適当においていきます。</p>
         </div>
         
     );
