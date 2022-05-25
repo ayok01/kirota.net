@@ -12,7 +12,7 @@
           color="grey"
           size="164"
         >
-        <v-img src="./20220309gif-icon2.gif"></v-img>
+        <v-img src="./gif-icon2.gif"></v-img>
       </v-avatar>
       </v-row>
       <v-col class="py-0">
@@ -21,8 +21,8 @@
 
         >
         <v-list-item-content>
-          <v-card-text class="text-center text-h6">
-          Shirotsuki kirota
+          <v-card-text class="text-center text-h5">
+          白月 きろた
           </v-card-text>
           <v-list-item-subtitle class="text-center">エブリディヤングライフ</v-list-item-subtitle>
         </v-list-item-content>
@@ -34,22 +34,25 @@
             outlined
             rounded
             text
+            link nuxt href="https://twitter.com/KiroTuki"
             >
-            <a href="https://twitter.com/KiroTuki">Twitter</a>
+            Twitter
           </v-btn>
-                    <v-btn
+          <v-btn
             outlined
             rounded
             text
+            link nuxt href="https://www.pixiv.net/users/26696698"
             >
-            <a href="https://misskey.io/@shirotuki_ki">Misskey</a>
+            Pixiv
           </v-btn>
-                    <v-btn
+          <v-btn
             outlined
             rounded
             text
+            link nuxt href="https://misskey.io/@shirotuki_ki"
             >
-            <a href="https://www.pixiv.net/users/26696698">Pixiv</a>
+            Misskey
           </v-btn>
       </v-card-actions>
       </v-row>
