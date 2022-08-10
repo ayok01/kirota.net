@@ -1,1 +1,0 @@
-kirota.netのサイト
