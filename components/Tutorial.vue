@@ -1,7 +1,8 @@
 <!-- Please remove this file from your project -->
-<template>
-<h1>Title</h1>
-</template>
+<div>
+  <h1>Title</h1>
+  <b-button variant="primary">Primary Button</b-button>
+</div>
 
 <script>
 export default {

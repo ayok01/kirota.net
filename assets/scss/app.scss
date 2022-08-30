@@ -1,0 +1,33 @@
+$primary: #FCFCFC;
+$primary-font-family: 'Inter';
+
+html{
+    background-color: $primary;
+    font-family: $primary-font-family;
+}
+
+.b-button{
+    /* オートレイアウト */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 10px;
+  
+    font-family: 'Inter';
+    font-weight: 100; 
+    font-size: 24px;
+    line-height: 29px;
+    /* テーマ色 */
+    background: #FCFCFC;
+    /* Drop Shadow */
+    box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.25), -4px -4px 4px rgba(255, 255, 255, 0.5);
+    border-radius: 121px;
+    border: none;
+    &:hover {
+      box-shadow: inset 7px 8px 20px rgba(0, 0, 0, 0.25), inset -8px -8px 27px #FFFFFF;
+    }
+  
+  }
+
+@import '~bootstrap/scss/bootstrap';
