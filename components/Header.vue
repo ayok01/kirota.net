@@ -4,9 +4,9 @@
       <b-navbar-brand class="header-title" href="/">
         Kirota
       </b-navbar-brand>
-      <div class="header-nav">
+      <div class="header-nav" >
         <div class="nav-frame">
-          <button class="b-button">About</button>
+          <button class="b-button" onclick="location.href='/'">About</button>
         </div>
         <div class="nav-frame">
           <button class="b-button" href="#">gallery</button>
