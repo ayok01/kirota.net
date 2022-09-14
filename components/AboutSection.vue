@@ -111,7 +111,7 @@ flex-grow: 0;
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        padding: 0px 476px;
+        padding: 0px 266px;
         gap: 31px;
         width: 100%;
         height: auto;
@@ -121,6 +121,7 @@ flex-grow: 0;
         @include tablet{
             display: block;
             padding: 0px 20px;
+            width: 100%;
         }
   
         .about-contnt-image-frame{
@@ -134,10 +135,14 @@ flex-grow: 0;
             margin: 30px 0;
             gap: 10px;
 
+            width: 100vw;
             height: 70vh;
             /* テーマ色 */
             box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.25), -4px -4px 4px rgba(255, 255, 255, 0.5);
             border-radius: 35px;
+        @include tablet{
+            width: auto;
+        }
             
             .about-contnt-image{
                 width: 28vw;
@@ -161,15 +166,15 @@ flex-grow: 0;
             margin: 30px 0;
             gap: 10px;
 
-
+            width: 100vw;
             height: 70vh;
 
             box-shadow: inset 4px 4px 3px rgba(0, 0, 0, 0.25), inset -4px -4px 4px rgba(255, 255, 255, 0.5);
             border-radius: 35px;
 
-            /* オートレイアウト内部 */
-            align-self: stretch;
-            flex-grow: 1;
+            @include tablet{
+                width: auto;
+            }
 
             .self-introduction-description-name-frame {
                 /* Frame 22 */
@@ -256,7 +261,6 @@ flex-grow: 0;
                 position: absolute;
                 bottom: -200px;
 
-                width: 100%;
                 height: auto;
                 &__frame{
                     
