@@ -64,21 +64,21 @@ $breakpoint-mobile: 665px;
   }
 }
 .about-section{
-/* Frame 20 */
-/* オートレイアウト */
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-padding: 83px 0px;
-gap: 31px;
+    /* Frame 20 */
+    /* オートレイアウト */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 83px 0px;
+    gap: 31px;
 
-width: 100%;
-height: auto;
-/* オートレイアウト内部 */
-flex: none;
-align-self: stretch;
-flex-grow: 0;
+    width: 100%;
+    height: auto;
+    /* オートレイアウト内部 */
+    flex: none;
+    align-self: stretch;
+    flex-grow: 0;
 
     .title-frame{
         /* Frame 27 */
