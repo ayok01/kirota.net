@@ -1,33 +1,71 @@
 <template>
-    <div class="about-section">
-        <div class="title-frame">
+    <section class="about-section">
+        <h2 class="title-frame">
             <div class="about-title">About</div>
-        </div>
+        </h2>
         <div class="about-content">
             <div class="about-contnt-image-frame">
-                <img class="" src ="../static/top-img.jpg"> 
+                <img class="about-contnt-image" src ="../static/top-img.jpg"> 
             </div>
-            <div class="about-content-frame">
-                <div class="title-name-frame">
-                    <div class="title-yomigana">
+            <div class="self-introduction-frame">
+                <div class="self-introduction-description-name-frame">
+                    <div class="self-introduction-name-yomigana">
                         shirotsuki kirota
                     </div>
-                    <div class="title-name">
+                    <div class="self-introduction-name">
                         白月　きろた
+                    </div>
+                </div>
+                <div class="self-introduction-description-frame">
+                    <p class="self-introduction-description">
+                        ここはあとから決めますー
+                    </p>
+                </div>
+                <div class="social-icons">
+                    <div class="social-icons__frame">
+                        <a href="https://twitter.com/KiroTuki" class="social-icons__frame--modifier">
+                            <img src="~/static/social_icons/twitter.svg"/>
+                        </a>
+                    </div>
+                    <div class="social-icons__frame">
+                        <a href="https://twitter.com/KiroTuki" class="social-icons__frame--modifier">
+                            <img src="~/static/social_icons/twitter.svg"/>
+                        </a>
+                    </div>
+                    <div class="social-icons__frame">
+                        <a href="https://twitter.com/KiroTuki" class="social-icons__frame--modifier">
+                            <img src="~/static/social_icons/twitter.svg"/>
+                        </a>
+                    </div>
+                    <div class="social-icons__frame">
+                        <a href="https://twitter.com/KiroTuki" class="social-icons__frame--modifier">
+                            <img src="~/static/social_icons/twitter.svg"/>
+                        </a>
+                    </div>
+                </div>
+                <div class="sit-image">
+                    <div class="sit-image__frame">
+                        <div class="sit-image__frame--modifier"></div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 </template>
   
-<style>
+<style lang="scss">
+$breakpoint-tablet: 955px;
+$breakpoint-mobile: 665px;
+
+// 画面幅955以下になるとこの設定が適用される
+@mixin tablet{
+  @media only screen and (max-width: ($breakpoint-tablet)) {
+    @content;
+  }
+}
 .about-section{
-    /* Frame 20 */
-
-
+/* Frame 20 */
 /* オートレイアウト */
-
 display: flex;
 flex-direction: column;
 justify-content: center;
@@ -37,85 +75,199 @@ gap: 31px;
 
 width: 100%;
 height: auto;
-
-
 /* オートレイアウト内部 */
-
 flex: none;
-order: 2;
 align-self: stretch;
 flex-grow: 0;
+
+    .title-frame{
+        /* Frame 27 */
+        /* オートレイアウト */
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 24px 70px;
+        gap: 10px;
+
+        width: 100%;
+        height: auto;
+        /* オートレイアウト内部 */
+        align-self: stretch;
+
+        .about-title{
+            /* About */
+            font-style: normal;
+            font-weight: 100;
+            font-size: 40px;
+            line-height: 48px;
+        }
+    }
+
+    .about-content{
+        /* Frame 21 */
+        /* オートレイアウト */
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 476px;
+        gap: 31px;
+        width: 100%;
+        height: auto;
+        /* オートレイアウト内部 */
+        align-self: stretch;
+
+        @include tablet{
+            display: block;
+            padding: 0px 20px;
+        }
+  
+        .about-contnt-image-frame{
+            /* Frame 14 */
+            /* オートレイアウト */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 10px 22px;
+            margin: 30px 0;
+            gap: 10px;
+
+            height: 70vh;
+            /* テーマ色 */
+            box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.25), -4px -4px 4px rgba(255, 255, 255, 0.5);
+            border-radius: 35px;
+            
+            .about-contnt-image{
+                width: 28vw;
+                height: 68vh;
+                object-fit: cover;
+                border-radius: 35px;
+                @include tablet{
+                    width: 100%;
+                }
+            }
+
+        }
+
+        .self-introduction-frame{
+            /* Frame 19 */
+            /* オートレイアウト */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 52px 10px;
+            margin: 30px 0;
+            gap: 10px;
+
+
+            height: 70vh;
+
+            box-shadow: inset 4px 4px 3px rgba(0, 0, 0, 0.25), inset -4px -4px 4px rgba(255, 255, 255, 0.5);
+            border-radius: 35px;
+
+            /* オートレイアウト内部 */
+            align-self: stretch;
+            flex-grow: 1;
+
+            .self-introduction-description-name-frame {
+                /* Frame 22 */
+                /* オートレイアウト */
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 10px;
+                gap: 10px;
+                width: 100%;
+                height: 137px;
+
+                font-style: normal;
+                font-weight: 400;
+
+                /* オートレイアウト内部 */
+                align-self: stretch;
+                .self-introduction-name-yomigana{
+                    font-size: 24px;
+                    line-height: 29px;
+                    /* ボックスの高さと同一 */
+                    text-align: center;
+                    color: #676767;
+                    
+                    /* オートレイアウト内部 */
+                    align-self: stretch;
+                }
+                .self-introduction-name{
+                        font-size: 40px;
+                        line-height: 48px;
+                        text-align: center;
+                        color: #000000;
+
+                        /* オートレイアウト内部 */
+                        align-self: stretch;
+                }
+            }
+
+            .social-icons{
+                /* オートレイアウト */
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                padding: 0px;
+                gap: 26px;
+
+                width: 100%;
+                height: 62px;
+
+                &__frame{
+                    /* オートレイアウト */
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 0px;
+                    gap: 10px;
+                    
+
+                    width: 63px;
+                    height: 62px;
+                    /* Drop Shadow */
+                    box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.25), -4px -4px 4px rgba(255, 255, 255, 0.5);
+                    border-radius: 121px;
+                    &:hover{
+                            box-shadow: inset 7px 8px 20px rgba(0, 0, 0, 0.25), inset -8px -8px 27px #FFFFFF;
+                        }
+                    &--modifier{
+                        width: 60%;
+
+
+                    }
+                }
+            }
+            .sit-image{
+                /* オートレイアウト */
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                padding: 0px 103px 12px;
+                gap: 10px;
+                position: absolute;
+                bottom: -200px;
+
+                width: 100%;
+                height: auto;
+                &__frame{
+                    
+                    width: 300px;
+                    height: 600px;
+                    background: #4b1b1b;
+
+                }
+            }
+        }
+    }
 }
 
-.title-frame{
-    /* Frame 27 */
-
-
-/* オートレイアウト */
-
-display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-padding: 24px 70px;
-gap: 10px;
-
-width: 100%;
-height: auto;
-
-/* オートレイアウト内部 */
-
-flex: none;
-order: 0;
-align-self: stretch;
-flex-grow: 0;
-}
-
-.about-title{
-    /* About */
-
-
-width: 109px;
-height: 48px;
-
-font-family: 'Inter';
-font-style: normal;
-font-weight: 100;
-font-size: 40px;
-line-height: 48px;
-
-color: #000000;
-
-
-/* オートレイアウト内部 */
-
-flex: none;
-order: 0;
-flex-grow: 0;
-}
-
-.about-contnt{
-    /* Frame 21 */
-
-
-/* オートレイアウト */
-
-display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-padding: 0px 476px;
-gap: 31px;
-
-width: 1920px;
-height: 644px;
-
-
-/* オートレイアウト内部 */
-
-flex: none;
-order: 1;
-align-self: stretch;
-flex-grow: 0;
-}
 </style>

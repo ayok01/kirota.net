@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <b-navbar class="header" toggleable="lg" type="white" style="background-color: $primery;">
+  <header>
+    <b-navbar class="header">
       <b-navbar-brand class="header-title" href="/">
         Kirota
       </b-navbar-brand>
@@ -16,10 +16,10 @@
         </div>
       </div>
     </b-navbar>
-  </div>
+  </header>
 </template>
 
-<style>
+<style >
 .nav-frame{
 flex-direction: column;
 justify-content: center;
@@ -33,7 +33,6 @@ gap: 10px;
   padding: 25px 178px;
 }
 .header-title{
-  height: 58px; 
   width: 236px;
   font-style: normal; 
   font-weight: 100; 
@@ -49,7 +48,7 @@ gap: 10px;
   justify-content: flex-end;
   align-items: center;
   padding: 10px;
-  gap: 30px;
+  gap: 10px;
   width: 100%;
   height: 89px;
 }

@@ -1,9 +1,9 @@
 <template>
-    <div class="top-frame">
+    <section class="top-frame">
         <div class="img-frame">
             <img class="top-img" src ="../static/top-img.jpg"> 
         </div>
-    </div>
+    </section>
 </template>
   
 <style>
@@ -20,7 +20,6 @@
     gap: 179px;
     /* オートレイアウト内部 */
     flex: none;
-    order: 1;
     align-self: stretch;
     flex-grow: 0;
 
@@ -44,7 +43,6 @@
 
     /* オートレイアウト内部 */
     flex: none;
-    order: 0;
     align-self: stretch;
     flex-grow: 0;
 
@@ -65,7 +63,6 @@
     to{
         /*終了のCSS*/
         /* テーマ色 */
-        background: #FCFCFC;
         box-shadow: inset 7px 8px 20px rgba(0, 0, 0, 0.25), inset -8px -8px 27px #FFFFFF;
  
     }
@@ -81,7 +78,6 @@
 
     /* オートレイアウト内部 */
     flex: none;
-    order: 0;
     flex-grow: 0;   
 }
 

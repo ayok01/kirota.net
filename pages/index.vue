@@ -8,7 +8,7 @@
 
 <script lang="ts">
   import Vue from 'vue'
-  import Header from '~/components/Header.vue';
+  import Header from '~/layouts/Header.vue';
   import Top from '~/components/Top.vue';
   import AboutSection from '~/components/AboutSection.vue';
 
@@ -17,3 +17,21 @@
       components: { Header, Top, AboutSection}
   })
 </script>
+
+<style>
+  /*---- index ----*/
+.top-page{
+  /* オートレイアウト */
+  
+  display: flex;
+  flex-direction: column;
+  
+  padding: 0px;
+  gap: 3vh;
+  
+  position: relative;
+  
+  }
+
+
+</style>
