@@ -54,7 +54,7 @@
 </template>
   
 <style lang="scss">
-$breakpoint-tablet: 955px;
+$breakpoint-tablet: 1050px;
 $breakpoint-mobile: 665px;
 
 // 画面幅955以下になるとこの設定が適用される
@@ -111,7 +111,7 @@ flex-grow: 0;
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        padding: 0px 266px;
+        padding: 0px 15vw;
         gap: 31px;
         width: 100%;
         height: auto;
@@ -120,7 +120,7 @@ flex-grow: 0;
 
         @include tablet{
             display: block;
-            padding: 0px 20px;
+            padding: 0px 10vw;
             width: 100%;
         }
   
@@ -145,7 +145,7 @@ flex-grow: 0;
         }
             
             .about-contnt-image{
-                width: 28vw;
+                width: 100%;
                 height: 68vh;
                 object-fit: cover;
                 border-radius: 35px;
