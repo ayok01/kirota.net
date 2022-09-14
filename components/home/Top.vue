@@ -1,7 +1,7 @@
 <template>
     <section class="top-frame">
         <div class="img-frame">
-            <img class="top-img" src ="../static/top-img.jpg"> 
+            <img class="top-img" src ="~/static/top-img.jpg"> 
         </div>
     </section>
 </template>

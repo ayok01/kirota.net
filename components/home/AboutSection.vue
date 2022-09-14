@@ -5,7 +5,7 @@
         </h2>
         <div class="about-content">
             <div class="about-contnt-image-frame">
-                <img class="about-contnt-image" src ="../static/top-img.jpg"> 
+                <img class="about-contnt-image" src ="~/static/top-img.jpg"> 
             </div>
             <div class="self-introduction-frame">
                 <div class="self-introduction-description-name-frame">
