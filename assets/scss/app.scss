@@ -1,9 +1,21 @@
-$primary: #FCFCFC;
+@import '~bootstrap/scss/bootstrap';
+
+$baseColor: #e6e7ee;
+$primary: #519cb9;
 $primary-font-family: 'Inter';
 
-html{
-    background-color: $primary;
-    font-family: $primary-font-family;
+$breakpoint-tablet: 955px;
+$breakpoint-mobile: 665px;
+
+
+@mixin tablet{
+  @media only screen and (max-width: ($breakpoint-tablet)) {
+    @content;
+  }
+}
+
+body{
+  background-color: $baseColor;
 }
 
 .b-button{
@@ -11,15 +23,15 @@ html{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 10px 20px;
     gap: 10px;
   
     font-family: 'Inter';
     font-weight: 100; 
-    font-size: 24px;
+    font-size: 20px;
     line-height: 29px;
     /* テーマ色 */
-    background: #FCFCFC;
+    background: $baseColor;
     /* Drop Shadow */
     box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.25), -4px -4px 4px rgba(255, 255, 255, 0.5);
     border-radius: 121px;
@@ -30,4 +42,3 @@ html{
   
   }
 
-@import '~bootstrap/scss/bootstrap';
