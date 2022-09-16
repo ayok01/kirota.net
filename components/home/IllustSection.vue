@@ -1,7 +1,22 @@
 <template>
     <section class="illustration">
-        <h2 class="illustration__title">
-            illustration
-        </h2>
+        <SectionTitle :title="illustTitle"/>
     </section>
 </template>
+
+<script lang="ts">
+    import Vue from 'vue'
+    import SectionTitle from "~/components/components/SectionTitle.vue";
+    export default Vue.extend({
+        components:{SectionTitle},
+        data(){
+            return{
+                illustTitle: 'illustration'
+            }
+        }
+    })
+</script>
+
+<style lang="scss">
+    
+</style>
