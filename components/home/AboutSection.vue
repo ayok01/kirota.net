@@ -1,8 +1,6 @@
 <template>
     <section class="about-section">
-        <h2 class="title-frame">
-            <div class="about-title">About</div>
-        </h2>
+        <SectionTitle :title="aboutTitle"/>
         <div class="about-content">
             <div class="about-contnt-image-frame">
                 <img class="about-contnt-image" src ="~/static/top-img.jpg"> 
@@ -45,13 +43,27 @@
                 </div>
                 <div class="sit-image">
                     <div class="sit-image__frame">
-                        <div class="sit-image__frame--modifier"></div>
+                        <img src="~/static/20220908.png" class="sit-image__frame--modifier">
                     </div>
                 </div>
             </div>
         </div>
     </section>
 </template>
+
+<script lang="ts">
+    import Vue from 'vue';
+    import SectionTitle from "~/components/components/SectionTitle.vue";
+    
+    export default Vue.extend({
+        components:{SectionTitle},
+        data(){
+            return{
+                aboutTitle: 'About'
+            }
+        }
+    })
+</script>
   
 <style lang="scss">
 $breakpoint-tablet: 1050px;
@@ -79,30 +91,6 @@ $breakpoint-mobile: 665px;
     flex: none;
     align-self: stretch;
     flex-grow: 0;
-
-    .title-frame{
-        /* Frame 27 */
-        /* オートレイアウト */
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        padding: 24px 70px;
-        gap: 10px;
-
-        width: 100%;
-        height: auto;
-        /* オートレイアウト内部 */
-        align-self: stretch;
-
-        .about-title{
-            /* About */
-            font-style: normal;
-            font-weight: 100;
-            font-size: 40px;
-            line-height: 48px;
-        }
-    }
 
     .about-content{
         /* Frame 21 */
@@ -259,15 +247,14 @@ $breakpoint-mobile: 665px;
                 padding: 0px 103px 12px;
                 gap: 10px;
                 position: absolute;
-                bottom: -200px;
+                bottom: -40px;
 
                 height: auto;
                 &__frame{
-                    
-                    width: 300px;
-                    height: 600px;
-                    background: #4b1b1b;
-
+                    img{
+                        width: auto;
+                        height: 600px;
+                    }                 
                 }
             }
         }
