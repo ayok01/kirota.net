@@ -9,7 +9,7 @@
 
 <script lang="ts">
   import Vue from 'vue'
-  import Header from '~/layouts/Header.vue';
+  import Header from '~/components/Header.vue';
   import Top from '~/components/home/Top.vue';
   import AboutSection from '~/components/home/AboutSection.vue';
   import IllustSection from '~/components/home/IllustSection.vue';
