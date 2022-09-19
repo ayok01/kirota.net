@@ -101,7 +101,6 @@ $breakpoint-mobile: 665px;
         align-items: center;
         padding: 0px 15vw;
         gap: 31px;
-        width: 100%;
         height: auto;
         /* オートレイアウト内部 */
         align-self: stretch;
@@ -153,7 +152,8 @@ $breakpoint-mobile: 665px;
             padding: 52px 10px;
             margin: 30px 0;
             gap: 10px;
-
+            
+            position: relative;
             width: 100vw;
             height: 70vh;
 
@@ -247,7 +247,7 @@ $breakpoint-mobile: 665px;
                 padding: 0px 103px 12px;
                 gap: 10px;
                 position: absolute;
-                bottom: -40px;
+                bottom: -300px;
 
                 height: auto;
                 &__frame{
