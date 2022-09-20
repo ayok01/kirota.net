@@ -108,7 +108,6 @@
             img{
                 padding: 5px 4px;
                 gap: 10px;
-
                 width: 25px;
                 height: 25.58px;
             }
