@@ -108,7 +108,6 @@ $breakpoint-mobile: 665px;
         @include tablet{
             display: block;
             padding: 0px 10vw;
-            width: 100%;
         }
   
         .about-contnt-image-frame{

@@ -14,11 +14,10 @@
   import Top from '~/components/home/Top.vue';
   import AboutSection from '~/components/home/AboutSection.vue';
   import IllustSection from '~/components/home/IllustSection.vue';
-  import IllustCard from '~/components/components/IllustCard.vue';
 
   export default Vue.extend({
       name: "IndexPage",
-      components: { Header, Top, AboutSection, IllustSection, IllustCard}
+      components: { Header, Top, AboutSection, IllustSection}
   })
 </script>
 
