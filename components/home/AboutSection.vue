@@ -128,6 +128,7 @@ $breakpoint-mobile: 665px;
             border-radius: 35px;
         @include tablet{
             width: auto;
+            height: 40vh;
         }
             
             .about-contnt-image{
@@ -137,6 +138,7 @@ $breakpoint-mobile: 665px;
                 border-radius: 35px;
                 @include tablet{
                     width: 100%;
+                    height: 40vh;
                 }
             }
 
@@ -161,6 +163,8 @@ $breakpoint-mobile: 665px;
 
             @include tablet{
                 width: auto;
+                height: 60vh;
+                margin-bottom: 120px;
             }
 
             .self-introduction-description-name-frame {

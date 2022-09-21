@@ -1,22 +1,23 @@
 <template>
     <div class="illustCard drop-shadow">
         <div class="illustCard__image">
-            <img src="~/static/top-img.jpg"/>
+            <img :src="illustThumbnailImg"/>
         </div>
         <div class="illustCard__description">
             <div class="illustCard__description--modifier">
                 <div class="illustCard__description--modifier__title">
-                    title
+                    {{illustTitle}}
                 </div>
                 <div class="illustCard__description--modifier__description">
-                    制作時間{{makingTime}}:制作期間{{making}}</br>
+                    制作時間{{makingTime}}時間 :制作期間{{makingPeriod}}日
+                <br/>
                     {{makeDate}}
                 </div>
             </div>
-            <div class="b-button illiustCard__description--social">
+            <button @click="foveriteCounter ++" class="b-button illiustCard__description--social">
                 <img src="~/static/favorite_icon.svg"/>
-                <div class="count">18</div>
-            </div>
+                <div class="count">{{foveriteCounter}}</div>
+            </button>
         </div>
     </div>
 </template>
@@ -26,11 +27,36 @@
 
     export default Vue.extend({
         props:{
+            illustThumbnailImg:{
+              type:String,
+              default: 'https://storage.googleapis.com/misskey-kirota-server/misskey-kirota-server/72b68c20-cbc1-419d-91c2-574efe5448bc.png',
+
+            },
+            illustTitle:{
+                type:String,
+              default: 'Title',
+            },
             makingTime:{
                 type: Number,
                 default: 0,
                 required: true
+            },
+            makingPeriod:{
+                type:Number,
+                default:0,
+                required: true
+            },
+            makeDate:{
+                type:String,
+                default:'2022/02/02'
+            },
+            foveriteCounter:{
+                type:Number,
+                default:0,
+                required:true
             }
+        },
+        computed:{
         }
     })
 </script>
