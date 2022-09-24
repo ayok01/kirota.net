@@ -101,7 +101,6 @@ $breakpoint-mobile: 665px;
         align-items: center;
         padding: 0px 15vw;
         gap: 31px;
-        width: 100%;
         height: auto;
         /* オートレイアウト内部 */
         align-self: stretch;
@@ -109,7 +108,6 @@ $breakpoint-mobile: 665px;
         @include tablet{
             display: block;
             padding: 0px 10vw;
-            width: 100%;
         }
   
         .about-contnt-image-frame{
@@ -130,6 +128,7 @@ $breakpoint-mobile: 665px;
             border-radius: 35px;
         @include tablet{
             width: auto;
+            height: 40vh;
         }
             
             .about-contnt-image{
@@ -139,6 +138,7 @@ $breakpoint-mobile: 665px;
                 border-radius: 35px;
                 @include tablet{
                     width: 100%;
+                    height: 40vh;
                 }
             }
 
@@ -153,7 +153,8 @@ $breakpoint-mobile: 665px;
             padding: 52px 10px;
             margin: 30px 0;
             gap: 10px;
-
+            
+            position: relative;
             width: 100vw;
             height: 70vh;
 
@@ -162,6 +163,8 @@ $breakpoint-mobile: 665px;
 
             @include tablet{
                 width: auto;
+                height: 60vh;
+                margin-bottom: 120px;
             }
 
             .self-introduction-description-name-frame {
@@ -247,7 +250,7 @@ $breakpoint-mobile: 665px;
                 padding: 0px 103px 12px;
                 gap: 10px;
                 position: absolute;
-                bottom: -40px;
+                bottom: -300px;
 
                 height: auto;
                 &__frame{

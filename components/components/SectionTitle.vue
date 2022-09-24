@@ -28,8 +28,6 @@
         padding: 24px 70px;
         gap: 10px;
 
-        width: 100%;
-        height: auto;
         /* オートレイアウト内部 */
         align-self: stretch;
 

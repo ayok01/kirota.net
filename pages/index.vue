@@ -4,6 +4,7 @@
     <Top />
     <AboutSection />
     <IllustSection/>
+    <IllustCard/>
   </div>
 </template>
 
@@ -16,7 +17,7 @@
 
   export default Vue.extend({
       name: "IndexPage",
-      components: { Header, Top, AboutSection, IllustSection }
+      components: { Header, Top, AboutSection, IllustSection}
   })
 </script>
 
