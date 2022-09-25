@@ -6,7 +6,7 @@ export default {
   head: {
     title: 'kirota.net',
     htmlAttrs: {
-      lang: 'en'
+      lang: 'jp'
     },
     meta: [
       { charset: 'utf-8' },
@@ -22,7 +22,7 @@ export default {
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
     '@/assets/scss/app.scss',
-    '@/assets/fonts/InterWeb/inter.css'
+    '@/assets/fonts/InterWeb/inter.scss'
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
