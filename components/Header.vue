@@ -1,44 +1,42 @@
 <template>
   <header>
     <nav class="header">
-      <div class="header-title" href="/">
-        Kirota
-      </div>
-      <div class="header-nav" >
-        <div class="nav-frame">
-          <button class="b-button" onclick="location.href='/'">About</button>
+      <nuxt-link class="header__title" to="/"> Kirota </nuxt-link>
+      <div class="header__nav">
+        <div class="header__nav__frame">
+          <nuxt-link class="b-button" to="/">About</nuxt-link>
         </div>
-        <div class="nav-frame">
-          <button class="b-button" href="#">gallery</button>
+        <div class="header__nav__frame">
+          <nuxt-link class="b-button" to="/">gallery</nuxt-link>
         </div>
-        <div class="nav-frame">
-          <button class="b-button" href="#">Contact Me</button>
+        <div class="header__nav__frame">
+          <nuxt-link class="b-button" to="/">Contact Me</nuxt-link>
         </div>
       </div>
     </nav>
   </header>
 </template>
 
-<style lang="scss">
-.header{
+<style lang="scss" scoped>
+.header {
   position: relative;
   align-items: center;
   display: flex;
   flex-flow: row nowrap;
   padding: 25px 178px;
   justify-content: flex-start;
-  
-  .header-title{
+
+  &__title {
     width: 236px;
-    font-style: normal; 
-    font-weight: 100; 
-    color: #000000; 
-    font-size: 48px; 
-    line-height: 58px; 
+    font-style: normal;
+    font-weight: 100;
+    color: #000000;
+    font-size: 48px;
+    line-height: 58px;
     letter-spacing: 0.485em;
   }
 
-  .header-nav{
+  &__nav {
     /* オートレイアウト */
     display: flex;
     flex-direction: row;
@@ -49,7 +47,7 @@
     width: 100%;
     height: 89px;
 
-    .nav-frame{
+    &__frame {
       flex-direction: column;
       justify-content: center;
       align-items: center;
@@ -58,6 +56,4 @@
     }
   }
 }
-
-
 </style>

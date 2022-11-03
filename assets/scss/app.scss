@@ -1,56 +1,64 @@
 $baseColor: #e6e7ee;
 $primary: #519cb9;
-$primary-font-family: 'Inter';
+$primary-font-family: "Inter";
 
 $breakpoint-tablet: 955px;
 $breakpoint-mobile: 665px;
 
-$shadow-color: #E6E7EE;
-$drop-shadow: 8px 8px 3px rgba(0, 0, 0, 0.25), -8px -8px 4px rgba(255, 255, 255, 0.5);
-$inner-shadow: inset 4px 4px 3px rgba(0, 0, 0, 0.25), inset -4px -4px 4px rgba(255, 255, 255, 0.5);
+$shadow-color: #e6e7ee;
+$drop-shadow: 8px 8px 3px rgba(0, 0, 0, 0.25),
+  -8px -8px 4px rgba(255, 255, 255, 0.5);
+$inner-shadow: inset 4px 4px 3px rgba(0, 0, 0, 0.25),
+  inset -4px -4px 4px rgba(255, 255, 255, 0.5);
 
-@mixin tablet{
+@mixin tablet {
   @media only screen and (max-width: ($breakpoint-tablet)) {
     @content;
   }
 }
 
-.drop-shadow{
-  background: #E6E7EE;
-  box-shadow: 8px 8px 3px rgba(0, 0, 0, 0.25), -8px -8px 4px rgba(255, 255, 255, 0.5);
+a {
+  text-decoration: none;
+}
+
+.drop-shadow {
+  background: #e6e7ee;
+  box-shadow: 8px 8px 3px rgba(0, 0, 0, 0.25),
+    -8px -8px 4px rgba(255, 255, 255, 0.5);
   border-radius: 35px;
 }
 
-.inner-shadow{
-  background: #E6E7EE;
-  box-shadow: inset 4px 4px 3px rgba(0, 0, 0, 0.25), inset -4px -4px 4px rgba(255, 255, 255, 0.5);
+.inner-shadow {
+  background: #e6e7ee;
+  box-shadow: inset 4px 4px 3px rgba(0, 0, 0, 0.25),
+    inset -4px -4px 4px rgba(255, 255, 255, 0.5);
 }
 
-body{
+body {
   background-color: $baseColor;
   font-family: $primary-font-family;
 }
 
-.b-button{
-    /* オートレイアウト */
-    justify-content: center;
-    align-items: center;
-    padding: 10px 20px;
-    gap: 10px;
-  
-    font-family: 'Inter';
-    font-weight: 100; 
-    font-size: 20px;
-    line-height: 29px;
-    /* テーマ色 */
-    background: $baseColor;
-    /* Drop Shadow */
-    box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.25), -4px -4px 4px rgba(255, 255, 255, 0.5);
-    border-radius: 121px;
-    border: none;
-    &:hover {
-      box-shadow: inset 7px 8px 20px rgba(0, 0, 0, 0.25), inset -8px -8px 27px #FFFFFF;
-    }
-  
-  }
+.b-button {
+  /* オートレイアウト */
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  gap: 10px;
 
+  font-family: "Inter";
+  font-weight: 100;
+  font-size: 20px;
+  line-height: 29px;
+  /* テーマ色 */
+  background: $baseColor;
+  /* Drop Shadow */
+  box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.25),
+    -4px -4px 4px rgba(255, 255, 255, 0.5);
+  border-radius: 121px;
+  border: none;
+  &:hover {
+    box-shadow: inset 7px 8px 20px rgba(0, 0, 0, 0.25),
+      inset -8px -8px 27px #ffffff;
+  }
+}
