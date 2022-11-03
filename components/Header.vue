@@ -26,6 +26,16 @@
   padding: 25px 178px;
   justify-content: flex-start;
 
+  &__title {
+    width: 236px;
+    font-style: normal;
+    font-weight: 100;
+    color: #000000;
+    font-size: 48px;
+    line-height: 58px;
+    letter-spacing: 0.485em;
+  }
+
   &__nav {
     /* オートレイアウト */
     display: flex;
