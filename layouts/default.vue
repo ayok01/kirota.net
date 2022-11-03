@@ -1,13 +1,12 @@
 <template>
-    <div>
-      <Header />
-      <nuxt />
-    </div>
+  <div>
+    <CommonHeader />
+    <nuxt />
+  </div>
 </template>
 
 <script lang="ts">
-  import Vue from 'vue'
+import Vue from "vue"
 
-  export default Vue.extend({
-  })
+export default Vue.extend({})
 </script>
