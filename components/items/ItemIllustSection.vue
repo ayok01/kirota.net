@@ -1,10 +1,10 @@
 <template>
   <section class="illustration">
-    <SectionTitle :title="illustTitle" />
+    <ItemsItemSectionTitle :title="illustTitle" />
     <div class="carousel">
       <ul class="carousel-area">
         <li class="carousel-list">
-          <IllustCard />
+          <ItemsItemIllustCard />
         </li>
       </ul>
     </div>
@@ -16,10 +16,7 @@
 
 <script lang="ts">
 import Vue from "vue"
-import SectionTitle from "~/components/components/SectionTitle.vue"
-import IllustCard from "../components/IllustCard.vue"
 export default Vue.extend({
-  components: { SectionTitle, IllustCard },
   props: {
     moreUrl: {
       type: String,
