@@ -6,18 +6,6 @@
         <li class="carousel-list">
           <IllustCard />
         </li>
-        <li class="carousel-list">
-          <IllustCard />
-        </li>
-        <li class="carousel-list">
-          <IllustCard />
-        </li>
-        <li class="carousel-list">
-          <IllustCard />
-        </li>
-        <li class="carousel-list">
-          <IllustCard />
-        </li>
       </ul>
     </div>
     <div class="more-title">

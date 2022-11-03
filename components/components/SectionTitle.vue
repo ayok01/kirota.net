@@ -1,7 +1,7 @@
 <template>
   <div>
     <h2 class="title-frame">
-      <div class="about-title">{{ title }}</div>
+      {{ title }}
     </h2>
   </div>
 </template>
@@ -28,12 +28,10 @@ export default Vue.extend({
   /* オートレイアウト内部 */
   align-self: stretch;
 
-  .about-title {
-    /* About */
-    font-style: normal;
-    font-weight: 100;
-    font-size: 40px;
-    line-height: 48px;
-  }
+  /* About */
+  font-style: normal;
+  font-weight: 100;
+  font-size: 40px;
+  line-height: 48px;
 }
 </style>
