@@ -1,42 +1,39 @@
 <template>
-    <div>
-        <h2 class="title-frame">
-            <div class="about-title">{{title}}</div>
-        </h2>
-    </div>
-
+  <div>
+    <h2 class="title-frame">
+      <div class="about-title">{{ title }}</div>
+    </h2>
+  </div>
 </template>
 
 <script lang="ts">
-    import Vue from 'vue'
+import Vue from "vue"
 
-    export default Vue.extend({
-        props:['title']
-
-    })
-    
+export default Vue.extend({
+  props: ["title"],
+})
 </script>
 
 <style lang="scss">
-        .title-frame{
-        /* Frame 27 */
-        /* オートレイアウト */
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        padding: 24px 70px;
-        gap: 10px;
+.title-frame {
+  /* Frame 27 */
+  /* オートレイアウト */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 24px 70px;
+  gap: 10px;
 
-        /* オートレイアウト内部 */
-        align-self: stretch;
+  /* オートレイアウト内部 */
+  align-self: stretch;
 
-        .about-title{
-            /* About */
-            font-style: normal;
-            font-weight: 100;
-            font-size: 40px;
-            line-height: 48px;
-        }
-    }
+  .about-title {
+    /* About */
+    font-style: normal;
+    font-weight: 100;
+    font-size: 40px;
+    line-height: 48px;
+  }
+}
 </style>
