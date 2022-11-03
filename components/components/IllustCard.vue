@@ -92,7 +92,6 @@
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        padding: 8px 36px;
         gap: 10px;
 
         width: 673px;

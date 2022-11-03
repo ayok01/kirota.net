@@ -117,7 +117,7 @@ $breakpoint-mobile: 665px;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            padding: 10px 22px;
+            padding: 52px 22px;
             margin: 30px 0;
             gap: 10px;
 
