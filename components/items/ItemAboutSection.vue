@@ -1,6 +1,6 @@
 <template>
   <section class="about-section">
-    <SectionTitle :title="aboutTitle" />
+    <ItemsItemSectionTitle :title="aboutTitle" />
     <div class="about-content">
       <div class="about-contnt-image-frame">
         <img class="about-contnt-image" src="~/static/top-img.jpg" />
@@ -62,10 +62,8 @@
 
 <script lang="ts">
 import Vue from "vue"
-import SectionTitle from "~/components/components/SectionTitle.vue"
 
 export default Vue.extend({
-  components: { SectionTitle },
   data() {
     return {
       aboutTitle: "About",
