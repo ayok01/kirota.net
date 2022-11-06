@@ -1,5 +1,6 @@
 $baseColor: #e6e7ee;
 $primary: #519cb9;
+$fontBaseColor: #000;
 $primary-font-family: "Inter";
 
 $breakpoint-tablet: 955px;
@@ -50,15 +51,5 @@ body {
   font-weight: 100;
   font-size: 20px;
   line-height: 29px;
-  /* テーマ色 */
-  background: $baseColor;
-  /* Drop Shadow */
-  box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.25),
-    -4px -4px 4px rgba(255, 255, 255, 0.5);
-  border-radius: 121px;
-  border: none;
-  &:hover {
-    box-shadow: inset 7px 8px 20px rgba(0, 0, 0, 0.25),
-      inset -8px -8px 27px #ffffff;
-  }
+  color: $fontBaseColor;
 }
