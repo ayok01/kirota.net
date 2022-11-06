@@ -53,6 +53,28 @@
       align-items: center;
       padding: 20px;
       gap: 10px;
+
+      a {
+        position: relative;
+        display: inline-block;
+        text-decoration: none;
+      }
+      a::after {
+        position: absolute;
+        bottom: -4px;
+        left: 0;
+        content: "";
+        width: 100%;
+        height: 1px;
+        background: #333;
+        transform: scale(0, 1);
+        transform-origin: right top;
+        transition: transform 0.3s;
+      }
+      a:hover::after {
+        transform-origin: left top;
+        transform: scale(1, 1);
+      }
     }
   }
 }
