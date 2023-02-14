@@ -17,24 +17,15 @@ function MyApp({ Component, pageProps }: AppProps) {
     <NextUIProvider theme={theme}>
       <Navbar variant={'sticky'}>
         <Navbar.Brand>
-          <Text
-            b
-            color='inherit'
-            hideIn='xs'
-            h3
-            css={{
-              textGradient: '45deg, $blue600 -20%, $pink600 50%',
-            }}
-            weight='bold'
-          >
-            白月 きろた
+          <Text color='inherit' hideIn='xs' h2 weight='thin'>
+            Kirota
           </Text>
         </Navbar.Brand>
         <Navbar.Content>
           <Navbar.Link color='inherit' href='/about'>
             About
           </Navbar.Link>
-          <Navbar.Link>Works</Navbar.Link>
+          {/* <Navbar.Link>Works</Navbar.Link> */}
           <Switch
             shadow
             checked={true}
