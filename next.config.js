@@ -10,13 +10,6 @@ const nextConfig = {
       },
     ];
   },
-  exportPathMap: async function () {
-    const paths = {
-      '/': { page: '/about' },
-      '/about': { page: '/about' },
-    };
-    return paths;
-  },
 };
 
 module.exports = nextConfig;
