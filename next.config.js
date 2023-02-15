@@ -10,10 +10,10 @@ const nextConfig = {
       },
     ];
   },
-  exportPathMap: async function(){
+  exportPathMap: async function () {
     const paths = {
       '/': { page: '/about' },
-      '/about': { page: '/about' }
+      '/about': { page: '/about' },
     };
     return paths;
   },

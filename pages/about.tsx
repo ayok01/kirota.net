@@ -61,7 +61,7 @@ export default function Home() {
           </a>
         </Grid>
         <Grid>
-          <a href='https://twitter.com/sk_ki6ta'>
+          <a href='https://twitter.com/Ki6Tsuki'>
             <Button shadow color='primary' auto>
               Twitter
             </Button>
