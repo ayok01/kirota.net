@@ -6,7 +6,7 @@ export default function Home() {
   const ThemeState = useTheme();
   return (
     <>
-      <Grid.Container gap={2}>
+      <Grid.Container gap={2} css={{ justifyContent: 'center' }}>
         <Grid xs={12} md={12} css={{ paddingTop: '$20' }}>
           {ThemeState.isDark && (
             <Image
@@ -31,7 +31,6 @@ export default function Home() {
         </Grid>
         <Grid
           xs={12}
-          md={12}
           css={{
             justifyContent: 'center',
             padding: '$0',
@@ -51,15 +50,12 @@ export default function Home() {
             @shirotsuki_ki@mk.kirota.net
           </Text>
         </Grid>
-      </Grid.Container>
-      <Grid.Container gap={2} css={{ justifyContent: 'center' }}>
-        <Grid>
-          <a href='https://mk.kirota.net/@shirotsuki_ki'>
-            <Button shadow color='success' auto>
-              Misskey
-            </Button>
-          </a>
-        </Grid>
+        <Grid
+          xs={12}
+          css={{
+            margin:10 ,
+          }}
+        />
         <Grid>
           <a href='https://twitter.com/Ki6Tsuki'>
             <Button shadow color='primary' auto>
@@ -78,6 +74,39 @@ export default function Home() {
           <a href='https://github.com/kirota401e'>
             <Button shadow color='gradient' auto>
               GitHub
+            </Button>
+          </a>
+        </Grid>
+        <Grid
+          xs={12}
+          css={{
+            justifyContent: 'center',
+            alignContent: 'center',
+            paddingBottom: 2,
+          }}
+        >
+          <Text css={{ margin: '$0' }} h5>
+            Fedivers
+          </Text>
+        </Grid>
+        <Grid>
+          <a rel='me' href='https://pawoo.net/@shirotuki_ki'>
+            <Button color='primary' auto ghost>
+              Pawoo
+            </Button>
+          </a>
+        </Grid>
+        <Grid>
+          <a href='https://mk.kirota.net/@shirotsuki_ki'>
+            <Button color='primary' auto ghost>
+              mk.kirota.net
+            </Button>
+          </a>
+        </Grid>
+        <Grid>
+          <a href='https://misskey.io/@shirotuki_ki'>
+            <Button color='primary' auto ghost>
+              Misskey.io
             </Button>
           </a>
         </Grid>
