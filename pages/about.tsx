@@ -53,7 +53,7 @@ export default function Home() {
         <Grid
           xs={12}
           css={{
-            margin:10 ,
+            margin: 10,
           }}
         />
         <Grid>

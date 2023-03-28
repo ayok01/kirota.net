@@ -25,7 +25,9 @@ function MyApp({ Component, pageProps }: AppProps) {
           <Navbar.Link color='inherit' href='/about'>
             About
           </Navbar.Link>
-          {/* <Navbar.Link>Works</Navbar.Link> */}
+          <Navbar.Link color='inherit' href='/note'>
+            Note
+          </Navbar.Link>
           <Switch
             shadow
             checked={true}
