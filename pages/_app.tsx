@@ -22,9 +22,9 @@ function MyApp({ Component, pageProps }: AppProps) {
           </Text>
         </Navbar.Brand>
         <Navbar.Content>
-          <Navbar.Link color='inherit' href='/about'>
+          {/* <Navbar.Link color='inherit' href='/about'>
             About
-          </Navbar.Link>
+          </Navbar.Link> */}
           <Navbar.Link color='inherit' href='/note'>
             Note
           </Navbar.Link>

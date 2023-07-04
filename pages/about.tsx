@@ -10,7 +10,7 @@ export default function Home() {
         <Grid xs={12} md={12} css={{ paddingTop: '$20' }}>
           {ThemeState.isDark && (
             <Image
-              src='https://storage.googleapis.com/misskey-kirota-server/misskey-kirota-server/d57a6d2f-5f0e-4ad4-ae6d-58510145425f.png'
+              src='https://s3.arkjp.net/misskey/42d983af-cacd-42ef-98a0-3e8cd6e0a0e2.png'
               objectFit='cover'
               alt='Default Image'
               width={200}
@@ -20,7 +20,7 @@ export default function Home() {
           )}
           {!ThemeState.isDark && (
             <Image
-              src='https://storage.googleapis.com/misskey-kirota-server/misskey-kirota-server/8410ab99-19ad-48e1-a05b-84a6fc4b6b83.png'
+              src='https://s3.arkjp.net/misskey/73e54922-b95f-4544-8dc7-907e0b8339a1.jpg'
               objectFit='cover'
               alt='Default Image'
               width={200}
@@ -46,9 +46,7 @@ export default function Home() {
             padding: '$0',
           }}
         >
-          <Text h6 weight='thin'>
-            @shirotsuki_ki@mk.kirota.net
-          </Text>
+          <Text h6 weight='thin'></Text>
         </Grid>
         <Grid
           xs={12}
@@ -57,7 +55,7 @@ export default function Home() {
           }}
         />
         <Grid>
-          <a href='https://twitter.com/Ki6Tsuki'>
+          <a href='https://twitter.com/Ki6ta_'>
             <Button shadow color='primary' auto>
               Twitter
             </Button>
@@ -71,9 +69,16 @@ export default function Home() {
           </a>
         </Grid>
         <Grid>
-          <a href='https://github.com/kirota401e'>
+          <a href='https://github.com/ayame01'>
             <Button shadow color='gradient' auto>
               GitHub
+            </Button>
+          </a>
+        </Grid>
+        <Grid>
+          <a href='https://bsky.app/profile/k6t.bsky.social'>
+            <Button shadow color='gradient' auto>
+              BlueSky social
             </Button>
           </a>
         </Grid>
@@ -97,14 +102,14 @@ export default function Home() {
           </a>
         </Grid>
         <Grid>
-          <a href='https://mk.kirota.net/@shirotsuki_ki'>
+          <a href='https://girak.moe/@kirota'>
             <Button color='primary' auto ghost>
-              mk.kirota.net
+              Girak.moe
             </Button>
           </a>
         </Grid>
         <Grid>
-          <a href='https://misskey.io/@shirotuki_ki'>
+          <a href='https://misskey.io/@k6t'>
             <Button color='primary' auto ghost>
               Misskey.io
             </Button>
