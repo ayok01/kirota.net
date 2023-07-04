@@ -15,9 +15,18 @@ function MyApp({ Component, pageProps }: AppProps) {
   });
   return (
     <NextUIProvider theme={theme}>
-      <Navbar variant={'sticky'}>
+      <Navbar variant={'sticky'} maxWidth={'fluid'}>
         <Navbar.Brand>
-          <Text color='inherit' hideIn='xs' h2 weight='thin'>
+          <Text
+            color='inherit'
+            hideIn='xs'
+            h2
+            weight='thin'
+            css={{
+              paddingLeft: '100%',
+              textGradient: '45deg, $blue700 0%, $pink600 90%',
+            }}
+          >
             Kirota
           </Text>
         </Navbar.Brand>
@@ -25,9 +34,9 @@ function MyApp({ Component, pageProps }: AppProps) {
           {/* <Navbar.Link color='inherit' href='/about'>
             About
           </Navbar.Link> */}
-          <Navbar.Link color='inherit' href='/note'>
+          {/* <Navbar.Link color='inherit' href='/note'>
             Note
-          </Navbar.Link>
+          </Navbar.Link> */}
           <Switch
             shadow
             checked={true}

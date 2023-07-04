@@ -54,6 +54,18 @@ export default function Home() {
             margin: 10,
           }}
         />
+        <Grid
+          xs={12}
+          css={{
+            justifyContent: 'center',
+            alignContent: 'center',
+            paddingBottom: 2,
+          }}
+        >
+          <Text css={{ margin: '$0' }} h5>
+            SNS
+          </Text>
+        </Grid>
         <Grid>
           <a href='https://twitter.com/Ki6ta_'>
             <Button shadow color='primary' auto>
@@ -112,6 +124,38 @@ export default function Home() {
           <a href='https://misskey.io/@k6t'>
             <Button color='primary' auto ghost>
               Misskey.io
+            </Button>
+          </a>
+        </Grid>
+        <Grid
+          xs={12}
+          css={{
+            margin: 10,
+          }}
+        />
+        <Grid
+          xs={12}
+          css={{
+            justifyContent: 'center',
+            alignContent: 'center',
+            paddingBottom: 2,
+          }}
+        >
+          <Text css={{ margin: '$0' }} h5>
+            Blog
+          </Text>
+        </Grid>
+        <Grid>
+          <a href='https://gallery.kirota.net/'>
+            <Button shadow color='primary' auto>
+              Art work
+            </Button>
+          </a>
+        </Grid>
+        <Grid>
+          <a href='https://girak.net/author/girak-admin'>
+            <Button shadow color='primary' auto>
+              Blog
             </Button>
           </a>
         </Grid>
