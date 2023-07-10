@@ -81,7 +81,7 @@ export default function Home() {
           </a>
         </Grid>
         <Grid>
-          <a href='https://github.com/ayame01'>
+          <a href='https://github.com/ayme01'>
             <Button shadow color='gradient' auto>
               GitHub
             </Button>
