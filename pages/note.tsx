@@ -1,5 +1,9 @@
 import { Grid, Card, Col, Row, Button, Text, Spacer } from '@nextui-org/react';
 import React from 'react';
+
+export interface Props {
+  item: IGetNoteReposne[];
+}
 export interface IGetNoteReposne {
   id: string;
   createdAt: string;
@@ -105,12 +109,12 @@ export const CardTemplate = (note: IGetNoteReposne) => {
   );
 };
 
-export const note = ({ item }: IGetNoteReposne[]) => {
+export const note = ({ item }: any) => {
   return (
     <>
       <Spacer x={14} />
       <Grid.Container gap={2}>
-        {item.map((e, index) => (
+        {item.map((e: any, index: number) => (
           <Grid xs={12} sm={2} key={index}>
             {CardTemplate(e)}
           </Grid>
