@@ -6,7 +6,7 @@ export interface Props {
 }
 export interface IGetNoteReposne {
   id: string;
-  createdAt: string;
+  createdAt: Date;
   userId: string;
   user: {
     username: 'string';
@@ -17,6 +17,8 @@ export interface IGetNoteReposne {
   files: INoteFileReponse[];
   replyId: null;
   renoteId: null;
+  hostName: string;
+  url: string;
 }
 
 export interface INoteFileReponse {
@@ -26,18 +28,19 @@ export interface INoteFileReponse {
 }
 
 export const CardTemplate = (note: IGetNoteReposne) => {
-  const link = 'https://girak.moe/notes/' + note.id;
-
   return (
     <Card css={{ w: '100%', h: '300px' }}>
-      <Card.Header css={{ position: 'absolute', zIndex: 1, top: 5 }}>
+      <Card.Header
+        style={{ display: note.text ? '' : 'none' }}
+        css={{
+          position: 'absolute',
+          zIndex: 1,
+          bgBlur: '#0f111466',
+          borderBottom: '$borderWeights$light solid $gray800',
+        }}
+      >
         <Col>
-          <Text size={12} weight='bold' transform='uppercase' color='#9E9E9E'>
-            Your day your way
-          </Text>
-          <Text h3 color='white'>
-            {note.text}
-          </Text>
+          <Text color='##889096'>{note.text}</Text>
         </Col>
       </Card.Header>
       <Card.Body css={{ p: 0 }}>
@@ -76,7 +79,7 @@ export const CardTemplate = (note: IGetNoteReposne) => {
                   {note.user.username}
                 </Text>
                 <Text color='#d1d1d1' size={12}>
-                  Girak.moe
+                  {note.hostName}
                 </Text>
               </Col>
             </Row>
@@ -89,7 +92,7 @@ export const CardTemplate = (note: IGetNoteReposne) => {
                 rounded
                 css={{ color: '#94f9f0', bg: '#94f9f026' }}
                 onClick={() => {
-                  location.href = link;
+                  location.href = note.url;
                 }}
               >
                 <Text
@@ -138,7 +141,29 @@ export const getServerSideProps = async () => {
       withFiles: true,
     }),
   });
+  const responseIo = await fetch(' https://misskey.io/api/users/notes', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({
+      i: process.env.MISSKEY_IO_TOKEN,
+      userId: '99pmq938i4',
+      withFiles: true,
+      limit: 20,
+    }),
+  });
   const item: IGetNoteReposne[] = await response.json();
+  const itemIo: IGetNoteReposne[] = await responseIo.json();
+  item.forEach((noteGirak) => {
+    noteGirak.hostName = 'Girak.moe';
+    noteGirak.url = ' https://girak.moe/notes/' + noteGirak.id;
+  });
+  itemIo.forEach((noteIo) => {
+    noteIo.hostName = 'Misskey.io';
+    noteIo.url = ' https://misskey.io/notes/' + noteIo.id;
+    item.push(noteIo);
+  });
   //以下のconsole.logはブラウザで実行されない
   return {
     props: {
