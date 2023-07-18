@@ -23,7 +23,6 @@ function MyApp({ Component, pageProps }: AppProps) {
             h2
             weight='thin'
             css={{
-              paddingLeft: '100%',
               textGradient: '45deg, $blue700 0%, $pink600 90%',
             }}
           >
@@ -31,12 +30,12 @@ function MyApp({ Component, pageProps }: AppProps) {
           </Text>
         </Navbar.Brand>
         <Navbar.Content>
-          {/* <Navbar.Link color='inherit' href='/about'>
+          <Navbar.Link color='inherit' href='/about'>
             About
-          </Navbar.Link> */}
-          {/* <Navbar.Link color='inherit' href='/note'>
+          </Navbar.Link>
+          <Navbar.Link color='inherit' href='/note'>
             Note
-          </Navbar.Link> */}
+          </Navbar.Link>
           <Switch
             shadow
             checked={true}
