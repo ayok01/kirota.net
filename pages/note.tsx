@@ -26,7 +26,7 @@ export interface INoteFileReponse {
 }
 
 export const CardTemplate = (note: IGetNoteReposne) => {
-  const link = 'https://girak.moe/note/' + note.id;
+  const link = 'https://girak.moe/notes/' + note.id;
 
   return (
     <Card css={{ w: '100%', h: '300px' }}>
