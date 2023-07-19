@@ -30,19 +30,6 @@ export interface INoteFileReponse {
 export const CardTemplate = (note: IGetNoteReposne) => {
   return (
     <Card css={{ w: '100%', h: '300px' }}>
-      <Card.Header
-        style={{ display: note.text ? '' : 'none' }}
-        css={{
-          position: 'absolute',
-          zIndex: 1,
-          bgBlur: '#0f111466',
-          borderBottom: '$borderWeights$light solid $gray800',
-        }}
-      >
-        <Col>
-          <Text color='##889096'>{note.text}</Text>
-        </Col>
-      </Card.Header>
       <Card.Body css={{ p: 0 }}>
         <Card.Image
           src={note.files[0].thumbnailUrl}
@@ -60,8 +47,17 @@ export const CardTemplate = (note: IGetNoteReposne) => {
           borderTop: '$borderWeights$light solid $gray800',
           bottom: 0,
           zIndex: 1,
+          display: 'block',
         }}
       >
+        <Row
+          css={{ my: '$5', mx: '$2' }}
+          style={{ display: note.text ? '' : 'none' }}
+        >
+          <Text css={{ width: `100%` }} color='##889096'>
+            {note.text}
+          </Text>
+        </Row>
         <Row>
           <Col>
             <Row>
@@ -112,12 +108,12 @@ export const CardTemplate = (note: IGetNoteReposne) => {
   );
 };
 
-export const note = ({ item }: any) => {
+export const note = ({ item }: Props) => {
   return (
     <>
       <Spacer x={14} />
       <Grid.Container gap={2}>
-        {item.map((e: any, index: number) => (
+        {item.map((e: IGetNoteReposne, index: number) => (
           <Grid xs={12} sm={2} key={index}>
             {CardTemplate(e)}
           </Grid>
@@ -164,7 +160,6 @@ export const getServerSideProps = async () => {
     noteIo.url = ' https://misskey.io/notes/' + noteIo.id;
     item.push(noteIo);
   });
-  //以下のconsole.logはブラウザで実行されない
   return {
     props: {
       item,
