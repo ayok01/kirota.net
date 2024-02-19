@@ -1,0 +1,37 @@
+/* 星空の背景のスタイル */
+.stars {
+  position: relative;
+  width: 100%; /* 星空の横幅 */
+  height: calc(100vh - 65px); /* 星空の縦幅 */
+  background-image: url("https://assets-fillet.girak.moe/thumbnail-ba12dc79-67c9-49a4-94f4-f4d2fd06cf67.webp");
+  background-size: cover;
+  overflow: hidden; /* 星が枠外にはみ出すのを防ぐ */
+}
+
+/* 星のスタイル */
+.star {
+  position: absolute;
+  display: block;
+  background-color: #fff; /* 星の色 */
+  border-radius: 50%;
+  box-shadow: 0 0 4px 2px rgba(#fff, 0.2); /* 星の影 */
+  opacity: 0;
+  animation: twinkle 5s infinite;
+}
+
+/* 星がキラキラ光るアニメーション */
+@keyframes twinkle {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    transform: scale(1);
+  }
+}
